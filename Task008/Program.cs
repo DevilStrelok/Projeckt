@@ -9,6 +9,6 @@ int x = 2;
 
 while (x <= number)
 {
-    Console.Write(x);
+    Console.Write($"{x}, ");
     x += 2;
 }
