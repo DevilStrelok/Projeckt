@@ -4,3 +4,38 @@
 // 7 -> да
 // 1 -> нет
 
+Console.Write("Введите число от 1 до 7: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number == 1)
+{
+    Console.WriteLine("Нет");
+}
+else if (number == 2)
+{
+    Console.WriteLine("Нет");
+}
+else if (number == 3)
+{
+    Console.WriteLine("Нет");
+}
+else if (number == 4)
+{
+    Console.WriteLine("Нет");
+}
+else if (number == 5)
+{
+    Console.WriteLine("Нет");
+}
+else if (number == 6)
+{
+    Console.WriteLine("Да");
+}
+else if (number == 7)
+{
+    Console.WriteLine("Да");
+}
+else
+{
+    Console.WriteLine("Такого дня нет");
+}
