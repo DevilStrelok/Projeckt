@@ -18,3 +18,20 @@ string Interval(int quarter)
     if (quarter == 4) return "x > 0 && y < 0";
     return "Такой четвери не существует";
 }
+
+//////////////////////////////////
+
+// Console.WriteLine("Введите номер четверти");
+// string quarterNum = Console.ReadLine();
+
+// string quarter = RangeCoord(quarterNum);
+// Console.WriteLine(quarter);
+
+// string RangeCoord (string quarter)
+// {
+//     if (quarter == "1") return "x > 0, y > 0";
+//     if (quarter == "2") return "x < 0, y > 0";
+//     if (quarter == "3") return "x < 0, y < 0";
+//     if (quarter == "4") return "x > 0, y < 0";
+//     return "Введена некорректно четверть";
+// }
