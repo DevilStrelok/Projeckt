@@ -13,7 +13,7 @@ int temp = number;
 int reverse = 0;
 int digital = 0;
 
-while (number > 0)
+while (number > 0 || number < 0)
 {
     digital = number % 10;
     reverse = reverse * 10 + digital;
