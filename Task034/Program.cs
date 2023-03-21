@@ -40,6 +40,5 @@ int EvenNumbers(int[] arr)
 
 int[] array = CreateArrayRndInt(10, 100, 1000);
 PrintArray(array);
-Console.WriteLine();
 int even = EvenNumbers(array);
-Console.WriteLine(even);
+Console.WriteLine($" -> {even}");
