@@ -52,7 +52,8 @@ double DifferenceArray(double[] arr)
 {
     double max = MaxArray(arr);
     double min = MinArray(arr);
-    double difference = max - min;
+    double diff = max - min;
+    double difference = Math.Round(diff, 1);
     return difference;
 }
 
