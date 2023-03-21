@@ -30,7 +30,7 @@ void PrintArray(double[] arr)
 
 double MaxArray(double[] arr)
 {
-    double max = 0;
+    double max = int.MinValue;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] > max) max = arr[i];
@@ -40,7 +40,7 @@ double MaxArray(double[] arr)
 
 double MinArray(double[] arr)
 {
-    double min = 0;
+    double min = int.MaxValue;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] < min) min = arr[i];
@@ -57,7 +57,7 @@ double DifferenceArray(double[] arr)
     return difference;
 }
 
-double[] array = CreateArrayRndDouble(10, -10, 10);
+double[] array = CreateArrayRndDouble(10, 0, 10);
 PrintArray(array);
 double difference = DifferenceArray(array);
 Console.WriteLine($" -> {difference}");
