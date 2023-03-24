@@ -12,6 +12,7 @@ Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int[] result = Fibonacci(number);
+Console.Write($"Если N = {number} -> ");
 PrintArray(result);
 
 int[] Fibonacci(int num)
