@@ -25,7 +25,7 @@ if (ValidateLines(lineData1, lineData2))
 double Prompt(string message)
 {
     Console.Write(message);
-    string value = Console.ReadLine();
+    string? value = Console.ReadLine();
     double result = Convert.ToDouble(value);
     return result;
 }
