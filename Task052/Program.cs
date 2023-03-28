@@ -44,12 +44,9 @@ void AverageValueMatrix(int[,] matrix)
         for (int i = 0; i < matrix.GetLength(0); i++)
         {
             sum += matrix[i, j];
-            
         }
-        double value = Math.Round(sum, 1);
-        Console.Write($"{value / matrix.GetLength(0)}; ");
+        Console.Write($"{Math.Round(sum / matrix.GetLength(0), 1)}; ");
     }
-    
 }
 
 int[,] array2d = CreateMatrixRndInt(3, 4, -10, 10);
