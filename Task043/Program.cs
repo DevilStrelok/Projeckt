@@ -43,7 +43,7 @@ double[] FindCoords(double[] lineData1, double[] lineDate2)
     double[] coord = new double[2];
     coord[x] = (lineData1[constant] - lineData2[constant]) /
                (lineData2[coefficient] - lineData1[coefficient]);
-    coord[y] = lineData1[constant] * coord[x] + lineData1[constant];
+    coord[y] = lineData1[coefficient] * coord[x] + lineData1[constant];
     return coord;
 }
 
