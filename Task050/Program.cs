@@ -39,19 +39,16 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-bool CheckMatrixIndex(double[,] matrix, int indexRow, int indexColumn)
+void CheckMatrixIndex(int[,] matrix, int indexRow, int indexColumn)
 {
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    if (indexRow < 0 | indexRow > matrix.GetLength(0) - 1 | indexColumn < 0 | indexColumn > matrix.GetLength(1) - 1)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            if (matrix[i, j] == matrix[indexRow, indexColumn])
-            {
-                return true;
-            }
-        }
+        Console.WriteLine("Такой позиции не существует");
     }
-    return false;
+    else
+    {
+        Console.WriteLine(matrix[indexRow, indexColumn]);
+    }
 }
 
 Console.Write("Введите индекс строки: ");
@@ -64,5 +61,5 @@ int[,] array2d = CreateMatrixRndInt(3, 4, -10, 10);
 PrintMatrix(array2d);
 
 Console.WriteLine();
-bool check = CheckMatrixIndex(array2d, indexRow, indexColumn);
-Console.WriteLine(check ? $"{array2d[indexRow, indexColumn]}" : "Такого числа в массиве нет");
+
+CheckMatrixIndex(array2d, indexRow, indexColumn);
